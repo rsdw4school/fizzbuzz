@@ -4,7 +4,8 @@ import sys
 
 def is_valid_countable_number(n):
     """Returns True if n is a countable number"""
-
+    if n > 0:
+        return True
     return False
 
 
@@ -13,12 +14,18 @@ def process(n):
        - n is evenly divisible by 3 (returns 'Fizz')
        - n is evenly divisible by 5 (returns 'Buzz')
        - n is evenly divisible by both 3 and 5 (returns 'FizzBuzz')"""
-
-    return ''
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+   
+    return str(n)
 
 
 @click.command()
-@click.option('-n', default=100, help='A positive integer')
+@click.option('-n', default=25, help='A positive integer')
 def main(n):
 
     # Validate input
