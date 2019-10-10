@@ -1,6 +1,6 @@
 # FizzBuzz
 
-[![Build Status](https://travis-ci.org/cherdt/fizzbuzz.svg?branch=master)](https://travis-ci.org/cherdt/fizzbuzz)
+[![Build Status](https://travis-ci.org/rsdw4school/fizzbuzz.svg?branch=master)](https://travis-ci.org/rsdw4school/fizzbuzz)
 
 (See that "failing" image above? That's intentional! You can fix that and get it to pass in your fork of this project.)
 
